@@ -4,12 +4,10 @@ workflows:
   test-deploy:
     jobs:
       - test
-      
 jobs:
   test:
     docker:
-      - image: cimg/node:16.4.0
+    - image: cimg/node:16.4.0
     steps:
       - checkout
       - run: node --version
-
